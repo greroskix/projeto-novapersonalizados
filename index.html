@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalizador de Camisas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Personalize sua Camisa</h1>
+    <p>Escolha a cor da camisa e monte sua estampa do seu jeito.</p>
+  </header>
+
+  <main class="layout">
+    <section class="editor-panel">
+      <div class="controls">
+        <div class="group">
+          <h2>Cor da camisa</h2>
+          <button id="btnBranca" class="btn">Camisa Branca</button>
+          <button id="btnPreta" class="btn">Camisa Preta</button>
+        </div>
+
+        <div class="group">
+          <h2>Edição</h2>
+          <button id="btnDownload" class="btn btn-primary">Download</button>
+        </div>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="shirtCanvas" width="650" height="700"></canvas>
+      </div>
+    </section>
+
+    <aside class="stamps-panel">
+      <h2>Estampas</h2>
+      <p>Clique na estampa para adicionar na camisa.</p>
+      <div id="stampsList" class="stamps-list"></div>
+    </aside>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/fabric@5.3.0/dist/fabric.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
